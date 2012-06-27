@@ -11,6 +11,9 @@ BOARD_USE_NASTY_PTHREAD_CREATE_HACK := true
 TARGET_BOOTANIMATION_PRELOAD=true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := false
 
+# Enable WEBGL in WebKit
+ENABLE_WEBGL := true
+
 # Platform
 TARGET_BOARD_PLATFORM := msm7x27
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
@@ -126,8 +129,8 @@ BOARD_CUSTOM_BRCM_PATCHRAM_PLUS := ../../../device/lge/thunderc-common/prebuilt/
 #ICS settings
 #DISABLE_DEXPREOPT := true
 #BOARD_NO_PAGE_FLIPPING := true
-#BUILD_OLD_LIBCAMERA:= true
-#TARGET_FORCE_CPU_UPLOAD := true
+#BUILD_OLD_LIBCAMERA := true
+TARGET_FORCE_CPU_UPLOAD := true
 
 
 # Command line for charging mode 
