@@ -5,6 +5,10 @@ PRODUCT_LOCALES := en_US es_ES
 
 BOOTIMAGES := $(wildcard device/lge/thunderc-common/bootimages/*.rle)
 
+# Don't want boot images or charger images in recovery.
+# They are not needed and they exceed the VS660 recovery size.
+RECOVERY_REMOVE_FILES := bootimages chargerimages
+
 # PicoTTS
 PRODUCT_REMOVE_FILES += \
 	system/tts/lang_pico/de-DE_gl0_sg.bin \
