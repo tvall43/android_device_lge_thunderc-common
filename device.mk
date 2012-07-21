@@ -188,3 +188,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     gsm.operator.numeric=$(CDMA_CARRIER_NUMERIC)
 
     
+PRODUCT_NAME:= thunderc
+PRODUCT_BRAND := LGE
